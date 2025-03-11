@@ -1,4 +1,5 @@
 import { NestFactory } from '@nestjs/core';
+import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { VersioningType } from '@nestjs/common';
 import {
 	FastifyAdapter,
@@ -37,6 +38,17 @@ async function bootstrap() {
 		// credentials: true, // cookie and sessions
 	});
 
+	// API swagger documentation
+	const config = new DocumentBuilder()
+		.setTitle('ASD Management API')
+		.setDescription('Description of the available endpoints of the ASD Management API')
+		.setVersion('2.0')
+		.addTag('ASD')
+		.build();
+	const documentFactory = () => SwaggerModule.createDocument(app, config);
+	SwaggerModule.setup( "api/v2/docs/", app, documentFactory);
+
+	// Local Web Server
 	await app.listen(process.env.PORT || 3000);
 }
 bootstrap();

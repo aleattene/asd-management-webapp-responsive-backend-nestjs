@@ -12,6 +12,9 @@ https://asd-management.netlify.app/
 Backend Deploy:
 https://asd-management-nestjs.vercel.app/api/v2/
 
+Available endpoints (swagger documentation):
+https://asd-management-nestjs.vercel.app/api/v2/docs/
+
 
 ## Project Description
 
