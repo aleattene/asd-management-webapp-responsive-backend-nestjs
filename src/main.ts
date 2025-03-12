@@ -46,12 +46,12 @@ async function bootstrap() {
 		.addTag('ASD')
 		.build();
 	const documentFactory = () => SwaggerModule.createDocument(app, config);
-	SwaggerModule.setup( "api/v2/docs", app, documentFactory, {
+	SwaggerModule.setup( "docs", app, documentFactory, {
 			customCssUrl: 'https://asd-management-nestjs.vercel.app/api/v2/swagger-ui.css',
 			customJs: [
-				'https://asd-management-nestjs.vercel.app/api/v2/swagger-ui-standalone-preset.js',
-				'https://asd-management-nestjs.vercel.app/api/v2/swagger-ui-bundle.js',
-				'https://asd-management-nestjs.vercel.app/api/v2/swagger-ui-init.js',
+				'https://asd-management-nestjs.vercel.app/api/v2/docs/swagger-ui-standalone-preset.js',
+				'https://asd-management-nestjs.vercel.app/api/v2/docs/swagger-ui-bundle.js',
+				'https://asd-management-nestjs.vercel.app/api/v2/docs/swagger-ui-init.js',
 			],
 		}
 		);
