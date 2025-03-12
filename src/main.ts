@@ -14,10 +14,10 @@ async function bootstrap() {
 			ignoreTrailingSlash: true,
 		}),
 	);
-	// app.setGlobalPrefix('api');
-	// app.enableVersioning({
-	// 	type: VersioningType.URI,
-	// });
+	app.setGlobalPrefix('api');
+	app.enableVersioning({
+		type: VersioningType.URI,
+	});
 
 	const allowedOrigins = [
 		'https://asd-management.netlify.app/',
@@ -46,7 +46,7 @@ async function bootstrap() {
 		.addTag('ASD')
 		.build();
 	const documentFactory = () => SwaggerModule.createDocument(app, config);
-	SwaggerModule.setup( "api", app, documentFactory());
+	SwaggerModule.setup( "docs", app, documentFactory());
 
 	// Local Web Server
 	await app.listen(process.env.PORT || 3000);
