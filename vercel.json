@@ -13,15 +13,15 @@
       "methods": [ "GET", "POST", "PUT", "PATCH", "DELETE" ]
     },
     {
-      "src": "/api/v2/docs/docs/swagger-ui.css",
+      "src": "/api/v2/docs/swagger-ui.css",
       "dest": "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui.min.css"
     },
     {
-      "src": "/api/v2/docs/docs/swagger-ui-bundle.js",
+      "src": "/api/v2/docs/swagger-ui-bundle.js",
       "dest": "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-bundle.min.js"
     },
     {
-      "src": "/api/v2/docs/docs/swagger-ui-standalone-preset.js",
+      "src": "/api/v2/docs/swagger-ui-standalone-preset.js",
       "dest": "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui-standalone-preset.min.js"
     }
   ]
