@@ -47,7 +47,7 @@ async function bootstrap() {
 		.build();
 	const documentFactory = () => SwaggerModule.createDocument(app, config);
 	SwaggerModule.setup( "docs", app, documentFactory, {
-			customCssUrl: 'https://asd-management-nestjs.vercel.app/api/v2/swagger-ui.css',
+			customCssUrl: 'https://asd-management-nestjs.vercel.app/api/v2/docs/swagger-ui.css',
 			customJs: [
 				'https://asd-management-nestjs.vercel.app/api/v2/docs/swagger-ui-standalone-preset.js',
 				'https://asd-management-nestjs.vercel.app/api/v2/docs/swagger-ui-bundle.js',
